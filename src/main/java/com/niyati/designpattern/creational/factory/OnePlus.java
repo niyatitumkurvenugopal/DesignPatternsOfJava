@@ -1,10 +1,11 @@
-package com.niyati.designpattern.creational.factory.model;
+package com.niyati.designpattern.creational.factory;
 
-public class IPhone extends Mobile {
+public class OnePlus extends Mobile {
+
     int ramSize;
     String processor;
 
-    public IPhone(int ramSize, String processor) {
+    public OnePlus(int ramSize, String processor) {
         this.ramSize = ramSize;
         this.processor = processor;
     }
@@ -19,3 +20,5 @@ public class IPhone extends Mobile {
         return this.processor;
     }
 }
+
+

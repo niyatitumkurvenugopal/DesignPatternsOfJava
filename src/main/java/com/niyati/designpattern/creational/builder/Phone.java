@@ -1,19 +1,26 @@
 package com.niyati.designpattern.creational.builder;
 
 public class Phone {
-    private final String os;
-    private final String processor;
-    private final int ram;
-    private final int battery;
+    private String os;
+    private String processor;
+    private int ram;
+    private int battery;
 
-    public Phone(String os, String processor, int ram, int battery) {
-        super();
+    public void setOs(String os) {
         this.os = os;
-        this.processor = processor;
-        this.ram = ram;
-        this.battery = battery;
     }
 
+    public void setProcessor(String processor) {
+        this.processor = processor;
+    }
+
+    public void setRam(int ram) {
+        this.ram = ram;
+    }
+
+    public void setBattery(int battery) {
+        this.battery = battery;
+    }
 
 
     @Override
