@@ -1,8 +1,8 @@
 package com.niyati.designpattern.structural.composite;
 
 public class SavingAccount extends Account {
-    private String accountNo;
-    private float accountBalance;
+    private final String accountNo;
+    private final float accountBalance;
 
     public SavingAccount(String accountNo, float accountBalance) {
         super();
@@ -10,7 +10,7 @@ public class SavingAccount extends Account {
         this.accountBalance = accountBalance;
     }
 
-    public float getBalance(){
+    public float getBalance() {
         return accountBalance;
     }
 }

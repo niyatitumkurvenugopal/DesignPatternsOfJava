@@ -8,12 +8,12 @@ public class WebDriverAdapter implements WebDriver {
     }
 
     @Override
-    public void getElement() {
-        ieDriver.findElement();
+    public String getElement() {
+        return ieDriver.findElement();
     }
 
     @Override
-    public void selectElement() {
-        ieDriver.clickElement();
+    public String selectElement() {
+        return ieDriver.clickElement();
     }
 }
