@@ -1,8 +1,8 @@
 package com.niyati.designpattern.structural.bridge;
 
 public interface Remote {
-    public void remoteOn();
-    public void remoteOff();
+    public String remoteOn();
+    public String remoteOff();
 
 
 }

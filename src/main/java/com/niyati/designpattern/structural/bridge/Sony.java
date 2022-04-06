@@ -8,14 +8,18 @@ public class Sony extends Tv {
 
 
     @Override
-    public void On() {
-        System.out.println("Sony Tv is On");
-        remote.remoteOn();
+    public String On() {
+        return remote.remoteOn() +sonyTvOn();
+    }
+    private String sonyTvOn(){
+        return " Sony Tv is On";
     }
 
     @Override
-    public void Off() {
-        System.out.println("Sony Tv is Off");
-        remote.remoteOff();
+    public String Off() {
+        return remote.remoteOff() +sonyTvOff();
+    }
+    private String sonyTvOff(){
+        return " Sony Tv is Off";
     }
 }

@@ -6,16 +6,22 @@ public class OnePlus extends Tv {
         super(r);
     }
 
-
     @Override
-    public void On() {
-        System.out.println("OnePlus Tv is On");
-        remote.remoteOn();
+    public String On() {
+        return remote.remoteOn() +onePlusTvOn();
+    }
+    private String onePlusTvOn(){
+        return " OnePlus Tv is On";
     }
 
     @Override
-    public void Off() {
-        System.out.println("OnePlusTv is Off");
-        remote.remoteOff();
+    public String Off() {
+        return remote.remoteOff() +onePlusTvOff();
     }
+    private String onePlusTvOff(){
+        return " OnePlus Tv is Off";
+    }
+
+
+
 }
