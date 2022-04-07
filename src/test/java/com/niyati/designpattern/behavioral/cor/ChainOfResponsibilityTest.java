@@ -1,7 +1,8 @@
 package com.niyati.designpattern.behavioral.cor;
 
 import org.junit.Test;
-import static org.junit.jupiter.api.Assertions.*;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class ChainOfResponsibilityTest {
     @Test
@@ -11,9 +12,8 @@ public class ChainOfResponsibilityTest {
 
         calculation1.setNextChain(calculation2);
 
-        Numbers request = new Numbers(20, 20, "add");
-        calculation1.calculate(request);
-        assertFalse(false,"50");
+        Numbers request = new Numbers(30, 20, "add");
+        assertEquals(50, calculation1.calculate(request));
     }
 
     @Test
@@ -23,8 +23,20 @@ public class ChainOfResponsibilityTest {
 
         calculation1.setNextChain(calculation2);
 
-        Numbers request = new Numbers(20, 20, "subtract");
-        calculation1.calculate(request);
-        assertFalse(false,"400");
+        Numbers request = new Numbers(40, 20, "subtract");
+        assertEquals(20, calculation2.calculate(request));
+    }
+
+    @Test
+    public void ZeroShouldCome() {
+        Chain calculation1 = new AddNumbers();
+        Chain calculation2 = new SubtractNumbers();
+
+        calculation1.setNextChain(calculation2);
+
+        Numbers request = new Numbers(40, 20, "multiply");
+        Numbers request1 = new Numbers(40, 20, "divide");
+        assertEquals(0, calculation1.calculate(request));
+        assertEquals(0, calculation2.calculate(request));
     }
 }
