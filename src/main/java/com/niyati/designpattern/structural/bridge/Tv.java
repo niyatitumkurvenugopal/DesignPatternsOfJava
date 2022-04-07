@@ -1,7 +1,7 @@
 package com.niyati.designpattern.structural.bridge;
 
 public abstract class Tv {
-    public Remote remote;
+    protected Remote remote;
 
     public Tv(Remote r){
         this.remote=r;

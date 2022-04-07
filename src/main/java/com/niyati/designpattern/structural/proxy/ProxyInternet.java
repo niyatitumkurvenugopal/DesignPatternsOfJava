@@ -5,19 +5,19 @@ import java.util.List;
 
 public class ProxyInternet implements Internet{
     private Internet internet= new RealInternet();
-    private static List<String> bannedsites;
+    public static List<String> bannedSites;
 
     static {
-        bannedsites=new ArrayList<String>();
-        bannedsites.add("abc.com");
-        bannedsites.add("def.com");
-        bannedsites.add("ijk.com");
-        bannedsites.add("lmn.com");
+        bannedSites=new ArrayList<String>();
+        bannedSites.add("abc.com");
+        bannedSites.add("def.com");
+        bannedSites.add("ijk.com");
+        bannedSites.add("lmn.com");
     }
 
     @Override
     public void connectTo(String serverhost) throws Exception{
-        if(bannedsites.contains(serverhost.toLowerCase()))
+        if(bannedSites.contains(serverhost.toLowerCase()))
         {
             throw new Exception("Access denied");
         }

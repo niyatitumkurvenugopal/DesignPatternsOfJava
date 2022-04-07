@@ -1,7 +1,6 @@
 package com.niyati.designpattern.creational.builder;
 
 public class PhoneBuilder {
-
     private String os;
     private String processor;
     private int ram;
