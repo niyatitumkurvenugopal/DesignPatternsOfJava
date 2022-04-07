@@ -8,13 +8,15 @@ public class FactoryDesignPatternTest {
     @Test
     public void CanGetIphoneFeatures() {
         Mobile iphone = MobileFactory.getInstance("IPhone", 6, "A15");
-        assertEquals("Ram: 6 Processor: A15", iphone.toString());
+        assertEquals( "A15",iphone.getProcessor());
+        assertEquals(6,iphone.getRam());
     }
 
     @Test
     public void CanGetOnePlusFeatures() {
         Mobile onePlus = MobileFactory.getInstance("OnePlus", 8, "Octa Core");
-        assertEquals("Ram: 8 Processor: Octa Core", onePlus.toString());
+        assertEquals( "Octa Core",onePlus.getProcessor());
+        assertEquals(8,onePlus.getRam());
     }
 
 }
