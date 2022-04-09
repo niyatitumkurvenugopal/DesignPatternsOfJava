@@ -6,7 +6,11 @@ public abstract class Mobile {
     public abstract String getProcessor();
 
     public String toString() {
-        return "Ram: " + this.getRam() + " Processor: " + this.getProcessor();
+        StringBuilder mobile=new StringBuilder();
+        mobile.append("Ram: ").append(getRam())
+                .append(" Processor: ").append(getProcessor());
+        String result=mobile.toString();
+        return result;
 
     }
 }

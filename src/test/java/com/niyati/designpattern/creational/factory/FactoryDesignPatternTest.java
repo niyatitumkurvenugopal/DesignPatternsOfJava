@@ -18,5 +18,4 @@ public class FactoryDesignPatternTest {
         assertEquals( "Octa Core",onePlus.getProcessor());
         assertEquals(8,onePlus.getRam());
     }
-
 }
