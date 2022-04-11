@@ -1,18 +1,24 @@
 package com.niyati.designpattern.behavioral.state;
 
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public class ReceivedState implements PackageState {
+    Logger logger = LoggerFactory.getLogger(ReceivedState.class);
+
     @Override
     public void next(Package pkg) {
-        System.out.println("This package is already received by Client");
+        logger.info("This package is already received by Client");
     }
 
     @Override
     public void prev(Package pkg) {
         pkg.setState(new DeliveredState());
     }
+
     @Override
-    public String printStatus(){
+    public String printStatus() {
         return "Package has been received";
     }
 }

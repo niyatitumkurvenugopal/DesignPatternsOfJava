@@ -1,6 +1,10 @@
 package com.niyati.designpattern.behavioral.state;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public class OrderedState implements PackageState {
+    Logger logger = LoggerFactory.getLogger(OrderedState.class);
 
     @Override
     public void next(Package pkg) {
@@ -9,7 +13,7 @@ public class OrderedState implements PackageState {
 
     @Override
     public void prev(Package pkg) {
-        System.out.println("The package is in root state");
+        logger.info("The package is in root state");
     }
 
     @Override

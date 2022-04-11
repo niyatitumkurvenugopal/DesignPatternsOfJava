@@ -7,7 +7,6 @@ public class EagerInitializationSingleton {
     }
 
     public static EagerInitializationSingleton getInstance() {
-        System.out.println(instance);
         return instance;
     }
 }

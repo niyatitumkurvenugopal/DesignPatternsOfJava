@@ -10,7 +10,6 @@ public class LazyInitializationSingleton {
         if (instance == null) {
             instance = new LazyInitializationSingleton();
         }
-        System.out.println(instance);
 
         return instance;
 
