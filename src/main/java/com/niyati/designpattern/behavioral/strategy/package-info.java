@@ -1,4 +1,4 @@
-package com.niyati.designpattern.behavioral.template.strategy;
+package com.niyati.designpattern.behavioral.strategy;
 /*
 Strategy pattern defines a family of algorithms ,put each of them into a separate class and make them interchangeable.
 The strategy pattern lets the algorithm vary independently of clients that use it.
