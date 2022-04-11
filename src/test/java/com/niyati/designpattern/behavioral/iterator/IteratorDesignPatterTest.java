@@ -4,10 +4,10 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class IteratorDesignPatterTest {
+class IteratorDesignPatterTest {
 
     @Test
-    public void shouldIterateAllSongs() {
+    void testIteratorPattern() {
         Songs songs = new Songs();
         String allSongs = " ";
 
@@ -15,7 +15,7 @@ public class IteratorDesignPatterTest {
             String song = (String) iterator.next();
             allSongs = allSongs + song;
         }
-        assertEquals(allSongs, "  You Belong With Me  We Don't Talk Anymore  Me  Blank Space ");
+        assertEquals("  You Belong With Me  We Don't Talk Anymore  Me  Blank Space ",allSongs);
     }
 }
 

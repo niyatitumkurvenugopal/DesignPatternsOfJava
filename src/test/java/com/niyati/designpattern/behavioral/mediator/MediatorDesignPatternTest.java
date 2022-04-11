@@ -4,9 +4,9 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class MediatorDesignPatternTest {
+class MediatorDesignPatternTest {
     @Test
-    public void flightLandSuccessfully_ifRunwayIsClear() {
+    void testMediatorPattern() {
         IATCMediator atcMediator = new ATCMediator();
         Flight sparrow101 = new Flight(atcMediator);
         Runway mainRunway = new Runway(atcMediator);

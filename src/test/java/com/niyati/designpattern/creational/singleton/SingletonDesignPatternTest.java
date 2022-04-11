@@ -2,14 +2,12 @@ package com.niyati.designpattern.creational.singleton;
 
 import org.junit.jupiter.api.Test;
 
-public class SingletonDesignPatternTest {
+class SingletonDesignPatternTest {
     @Test
-    public void lazyInitializationSingleton() {
+    void testSingletonPattern() {
         LazyInitializationSingleton instance = LazyInitializationSingleton.getInstance();
-    }
 
-    @Test
-    public void eagerInitializationSingleton() {
         EagerInitializationSingleton instance1 = EagerInitializationSingleton.getInstance();
     }
+
 }

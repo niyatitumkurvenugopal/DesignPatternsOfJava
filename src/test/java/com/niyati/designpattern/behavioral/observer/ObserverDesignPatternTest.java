@@ -2,11 +2,11 @@ package com.niyati.designpattern.behavioral.observer;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class ObserverDesignPatternTest {
+class ObserverDesignPatternTest {
     @Test
-    public void message() {
+    void testObserverMPattern() {
         MessageSubscriberOne messageSubscriberOne = new MessageSubscriberOne();
         MessageSubscriberTwo messageSubscriberTwo = new MessageSubscriberTwo();
         MessageSubscriberThree messageSubscriberThree = new MessageSubscriberThree();

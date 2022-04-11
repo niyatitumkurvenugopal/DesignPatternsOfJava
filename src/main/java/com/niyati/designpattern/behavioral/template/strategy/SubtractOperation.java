@@ -1,4 +1,4 @@
-package com.niyati.designpattern.behavioral.strategy;
+package com.niyati.designpattern.behavioral.template.strategy;
 
 public class SubtractOperation implements ArithmeticOperations {
     @Override

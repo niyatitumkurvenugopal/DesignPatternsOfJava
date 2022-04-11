@@ -4,9 +4,9 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class CompositeDesignPatternTest {
+class CompositeDesignPatternTest {
     @Test
-    public void totalBalanceOfDepositAndSavingsAccount() {
+    void testCompositePattern() {
         CompositeAccount component = new CompositeAccount();
 
         component.addAccount(new DepositAccount("DA01", 300));

@@ -7,6 +7,6 @@ public class MessageSubscriberOne implements Observer{
     private static Logger logger = LoggerFactory.getLogger(MessageSubscriberOne.class);
     @Override
     public void update(Message message) {
-        logger.info("MessageSubscriberOne ::"+message.getMessageContent());
+        logger.info("MessageSubscriberOne:{}",message.getMessageContent());
     }
 }

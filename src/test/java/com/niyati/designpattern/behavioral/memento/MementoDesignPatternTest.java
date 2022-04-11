@@ -4,9 +4,9 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class MementoDesignPatternTest {
+class MementoDesignPatternTest {
     @Test
-    public void shouldGetOriginalContentBackAfterChangingTheContent() {
+    void testMementoPattern() {
 
         Life life = new Life();
 
