@@ -1,9 +1,13 @@
 package com.niyati.designpattern.structural.proxy;
 
-public class RealInternet implements Internet{
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+public class RealInternet implements Internet {
+    private static final Logger logger = LoggerFactory.getLogger(RealInternet.class);
+
     @Override
-    public  void connectTo(String serverhost)
-    {
-        System.out.println("Connecting to "+ serverhost);
+    public void connectTo(String serverhost) {
+        logger.info("Connecting to " + serverhost);
     }
 }

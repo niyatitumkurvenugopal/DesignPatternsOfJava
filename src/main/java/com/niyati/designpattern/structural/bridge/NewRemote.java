@@ -3,13 +3,13 @@ package com.niyati.designpattern.structural.bridge;
 public class NewRemote implements Remote {
 
     @Override
-    public void remoteOn(){
-        System.out.println("New Remote On");
+    public String remoteOn(){
+       return "New Remote On.";
     }
 
     @Override
-    public void remoteOff(){
-        System.out.println("New Remote Off");
+    public String remoteOff(){
+        return  "New Remote Off.";
     }
 
 }

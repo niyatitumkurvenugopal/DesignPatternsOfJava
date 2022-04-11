@@ -7,8 +7,8 @@ public abstract class Tv {
         this.remote=r;
     }
 
-    abstract public void On();
-    abstract public void Off();
+    abstract public String On();
+    abstract public String Off();
 
 
 

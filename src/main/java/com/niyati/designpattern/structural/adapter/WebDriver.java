@@ -1,7 +1,7 @@
 package com.niyati.designpattern.structural.adapter;
 
 public interface WebDriver {
-    void getElement();
+    String getElement();
 
-    void selectElement();
+    String selectElement();
 }
