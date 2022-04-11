@@ -1,10 +1,11 @@
 package com.niyati.designpattern.behavioral.iterator;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class IteratorDesignPatterTest {
+
     @Test
     public void shouldIterateAllSongs() {
         Songs songs = new Songs();

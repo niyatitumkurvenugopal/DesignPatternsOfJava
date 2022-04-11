@@ -1,6 +1,6 @@
 package com.niyati.designpattern.creational.singleton;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class SingletonDesignPatternTest {
     @Test
