@@ -1,6 +1,6 @@
 package com.niyati.designpattern.behavioral.visitor;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import static com.niyati.designpattern.behavioral.visitor.VehicleService.calculateTotal;
 import static org.junit.jupiter.api.Assertions.*;
