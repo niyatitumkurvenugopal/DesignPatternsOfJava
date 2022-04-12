@@ -14,8 +14,9 @@ public class SubtractNumbers implements Chain {
     @Override
     public int calculate(Numbers request) {
         if (request.getCalculationWanted() == "subtract") {
-            logger.info("Subtraction of {} - {} = {}", request.getNumber1(), request.getNumber2(), (request.getNumber1() - request.getNumber2()));
-            return (request.getNumber1() - request.getNumber2());
+            int result=request.getNumber1() - request.getNumber2();
+            logger.info("Subtraction of {} - {} = {}", request.getNumber1(), request.getNumber2(),result);
+            return result;
         }
         logger.error("Only works For add and subtract");
         return 0;

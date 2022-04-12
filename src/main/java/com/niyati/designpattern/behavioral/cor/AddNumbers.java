@@ -14,8 +14,9 @@ public class AddNumbers implements Chain {
     @Override
     public int calculate(Numbers request) {
         if (request.getCalculationWanted() == "add") {
-            logger.info("Addition of {} + {} = {}", request.getNumber1(), request.getNumber2(), (request.getNumber1() + request.getNumber2()));
-            return request.getNumber1() + request.getNumber2();
+            int result=request.getNumber1() + request.getNumber2();
+            logger.info("Addition of {} + {} = {}", request.getNumber1(), request.getNumber2(),result);
+            return result;
         }
         nextChain.calculate(request);
         return 0;

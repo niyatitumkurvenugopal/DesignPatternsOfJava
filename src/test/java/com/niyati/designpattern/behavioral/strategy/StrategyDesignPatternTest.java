@@ -1,6 +1,5 @@
 package com.niyati.designpattern.behavioral.strategy;
 
-import com.niyati.designpattern.behavioral.template.strategy.*;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
