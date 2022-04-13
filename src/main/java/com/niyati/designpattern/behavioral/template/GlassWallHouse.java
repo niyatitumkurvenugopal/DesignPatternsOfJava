@@ -1,6 +1,6 @@
 package com.niyati.designpattern.behavioral.template;
 
-public class GlassWallHouse extends House {
+public class GlassWallHouse implements House {
     @Override
     public String decorateHouse() {
         return "Decorating Glass Wall House. ";

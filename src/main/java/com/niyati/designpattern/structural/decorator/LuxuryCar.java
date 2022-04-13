@@ -1,6 +1,9 @@
 package com.niyati.designpattern.structural.decorator;
 
 public class LuxuryCar extends CarDecorator{
+
+    public static final String WITH_LUXURY_CAR_FEATURES = "with Luxury car features ";
+
     public LuxuryCar(Car car) {
         super(car);
     }
@@ -10,6 +13,6 @@ public class LuxuryCar extends CarDecorator{
         return super.assemble() +luxuryCarFeatures();
     }
     private String luxuryCarFeatures(){
-        return "with Luxury car features ";
+        return WITH_LUXURY_CAR_FEATURES;
     }
 }

@@ -1,6 +1,10 @@
 package com.niyati.designpattern.behavioral.visitor;
 
 public class VehicleService {
+
+    private VehicleService() {
+    }
+
     public static int calculateTotal(Vehicle[] vehicles) {
         VehicleInspector inspector = new VehicleInspection();
         int total = 0;

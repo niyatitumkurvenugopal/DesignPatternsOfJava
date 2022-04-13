@@ -5,10 +5,10 @@ import java.util.List;
 
 public class ProxyInternet implements Internet{
     private Internet internet= new RealInternet();
-    public static List<String> bannedSites;
+    protected static final List<String> bannedSites;
 
     static {
-        bannedSites=new ArrayList<String>();
+        bannedSites=new ArrayList<>();
         bannedSites.add("abc.com");
         bannedSites.add("def.com");
         bannedSites.add("ijk.com");

@@ -5,7 +5,7 @@ public class VehicleInspection implements VehicleInspector{
     @Override
     public int visit(Car car) {
         int serviceCharge=0;
-        if(car.getColor()=="Black"){
+        if(car.getColor().equals("Black")){
             serviceCharge+=100;
         }
         else{

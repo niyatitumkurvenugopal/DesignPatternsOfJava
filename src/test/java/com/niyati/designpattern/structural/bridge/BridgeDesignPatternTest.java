@@ -8,12 +8,12 @@ class BridgeDesignPatternTest {
     @Test
     void tsetBridgePattern() {
         Tv sonyNewRemote = new Sony(new NewRemote());
-        assertEquals( "New Remote On. Sony Tv is On",sonyNewRemote.On());
-        assertEquals("New Remote Off. Sony Tv is Off",sonyNewRemote.Off() );
+        assertEquals( "New Remote On. Sony Tv is On",sonyNewRemote.on());
+        assertEquals("New Remote Off. Sony Tv is Off",sonyNewRemote.off() );
 
         Tv onePlusOldRemote = new OnePlus(new OldRemote());
-        assertEquals("Old Remote  On. OnePlus Tv is On",onePlusOldRemote.On());
-        assertEquals("Old Remote Off. OnePlus Tv is Off",onePlusOldRemote.Off());
+        assertEquals("Old Remote  On. OnePlus Tv is On",onePlusOldRemote.on());
+        assertEquals("Old Remote Off. OnePlus Tv is Off",onePlusOldRemote.off());
     }
 
 }

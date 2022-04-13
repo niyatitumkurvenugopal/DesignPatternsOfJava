@@ -4,11 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CompositeAccount {
-    private float totalBalance;
-    private List<Account> accountList=new ArrayList<Account>();
+    private List<Account> accountList=new ArrayList<>();
 
     public float getBalance(){
-        totalBalance=0;
+        float totalBalance=0;
         for(Account f:accountList){
             totalBalance=totalBalance+f.getBalance();
         }

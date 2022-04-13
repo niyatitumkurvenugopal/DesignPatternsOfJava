@@ -4,7 +4,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class AddNumbers implements Chain {
-    private static final Logger logger = LoggerFactory.getLogger(Chain.class);
+    private static final Logger logger = LoggerFactory.getLogger(AddNumbers.class);
     private Chain nextChain;
 
     public void setNextChain(Chain nextChain) {
@@ -13,9 +13,9 @@ public class AddNumbers implements Chain {
 
     @Override
     public int calculate(Numbers request) {
-        if (request.getCalculationWanted() == "add") {
-            int result=request.getNumber1() + request.getNumber2();
-            logger.info("Addition of {} + {} = {}", request.getNumber1(), request.getNumber2(),result);
+        if (request.getCalculationWanted().equals("add") ){
+            int result = request.getNumber1() + request.getNumber2();
+            logger.info("Addition of {} + {} = {}", request.getNumber1(), request.getNumber2(), result);
             return result;
         }
         nextChain.calculate(request);

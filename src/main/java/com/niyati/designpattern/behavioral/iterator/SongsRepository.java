@@ -1,8 +1,8 @@
 package com.niyati.designpattern.behavioral.iterator;
 
-public class Songs implements Container {
+public class SongsRepository implements Container {
 
-    public String songs []= {" You Belong With Me ", " We Don't Talk Anymore ", " Me ", " Blank Space "};
+    String [] songs = {" You Belong With Me ", " We Don't Talk Anymore ", " Me ", " Blank Space "};
 
     @Override
     public Iterator getIterator() {

@@ -9,8 +9,7 @@ public abstract class Mobile {
         StringBuilder mobile=new StringBuilder();
         mobile.append("Ram: ").append(getRam())
                 .append(" Processor: ").append(getProcessor());
-        String result=mobile.toString();
-        return result;
+        return mobile.toString();
 
     }
 }

@@ -1,7 +1,5 @@
 package com.niyati.designpattern.creational.factory;
 
-import com.niyati.designpattern.creational.factory.Mobile;
-
 public class IPhone extends Mobile {
 
     int ramSize;

@@ -8,7 +8,7 @@ class IteratorDesignPatterTest {
 
     @Test
     void testIteratorPattern() {
-        Songs songs = new Songs();
+        SongsRepository songs = new SongsRepository();
         String allSongs = " ";
 
         for (Iterator iterator = songs.getIterator(); iterator.hasNext(); ) {

@@ -8,6 +8,6 @@ public class RealInternet implements Internet {
 
     @Override
     public void connectTo(String serverhost) {
-        logger.info("Connecting to " + serverhost);
+        logger.info("Connecting to {}", serverhost);
     }
 }

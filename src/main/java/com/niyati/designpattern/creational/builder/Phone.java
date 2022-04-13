@@ -22,8 +22,8 @@ public class Phone {
                         .append(", processor= ").append(processor)
                         .append(", ram=").append(ram)
                         .append( ", battery=").append(battery);
-        String result=phone.toString();
-        return result;
+
+        return phone.toString();
     }
 
 

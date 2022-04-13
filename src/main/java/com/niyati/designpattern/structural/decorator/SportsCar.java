@@ -1,6 +1,9 @@
 package com.niyati.designpattern.structural.decorator;
 
 public class SportsCar extends CarDecorator{
+
+    public static final String WITH_SPORTS_CAR_FEATURES = "with Sports car features ";
+
     public SportsCar(Car car) {
         super(car);
     }
@@ -9,7 +12,7 @@ public class SportsCar extends CarDecorator{
         return super.assemble() +sportsCarFeatures();
     }
     private String sportsCarFeatures(){
-        return "with Sports car features ";
+        return WITH_SPORTS_CAR_FEATURES;
     }
 
 }

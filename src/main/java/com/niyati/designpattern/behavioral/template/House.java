@@ -1,32 +1,35 @@
 package com.niyati.designpattern.behavioral.template;
 
-public abstract class House {
-    public final String buildHouse() {
-    return constructBase()
-            +constructRoof()
-            +constructWalls()
-            +constructWindows()
-            +constructDoors()
-            +paintHouse()
-            +decorateHouse();
+public interface House {
+
+    String ROOF_HAS_BEEN_CONSTRUCTED = "Roof has been constructed. ";
+    String BASE_HAS_BEEN_CONSTRUCTED = "Base has been constructed. ";
+
+    public default String buildHouse() {
+        return constructBase()
+                +constructRoof()
+                +constructWalls()
+                +constructWindows()
+                +constructDoors()
+                +paintHouse()
+                +decorateHouse();
     }
 
-    public abstract String decorateHouse();
+    public String decorateHouse();
 
-    public abstract String paintHouse();
+    public String paintHouse();
 
-    public abstract String constructDoors();
+    public String constructDoors();
 
-    public abstract String constructWindows();
+    public String constructWindows();
 
-    public abstract String constructWalls();
+    public String constructWalls();
 
-    private final String constructRoof() {
-        return "Roof has been constructed. ";
+    private String constructRoof() {
+        return ROOF_HAS_BEEN_CONSTRUCTED;
     }
 
-    private final String constructBase() {
-        return "Base has been constructed. ";
+    private String constructBase() {
+        return BASE_HAS_BEEN_CONSTRUCTED;
     }
-
 }
