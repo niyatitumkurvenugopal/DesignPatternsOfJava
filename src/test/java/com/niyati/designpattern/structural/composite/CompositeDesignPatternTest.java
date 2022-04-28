@@ -9,11 +9,21 @@ class CompositeDesignPatternTest {
     void testCompositePattern() {
         CompositeAccount component = new CompositeAccount();
 
-        component.addAccount(new DepositAccount("DA01", 300));
-        component.addAccount(new DepositAccount("DA02", 800));
-        component.addAccount(new SavingAccount("SA01", 500));
+        DepositAccount depositAccount1 = new DepositAccount("DA01", 300);
+        DepositAccount depositAccount2 = new DepositAccount("DA02", 800);
+
+        SavingAccount savingAccount1 = new SavingAccount("SA01", 500);
+        SavingAccount savingAccount2 = new SavingAccount("SA02", 1000);
+
+        component.addAccount(depositAccount1);
+        component.addAccount(depositAccount2);
+        component.addAccount(savingAccount1);
+        component.addAccount(savingAccount2);
+
+        component.removeAccount(savingAccount1);
+
         float totalBalance = component.getBalance();
-        assertEquals(1600.0, totalBalance);
+        assertEquals(2100.0, totalBalance);
     }
 
 }

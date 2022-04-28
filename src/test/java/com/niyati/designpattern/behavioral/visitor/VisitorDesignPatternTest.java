@@ -13,6 +13,7 @@ class VisitorDesignPatternTest {
                 new Van(5000, 6),
                 new MotorBike(350, "Royal Enfield")
         };
+
         int totalCost = calculateTotal(vehicles);
         assertEquals(750, totalCost);
     }

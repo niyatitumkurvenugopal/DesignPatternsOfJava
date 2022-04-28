@@ -2,18 +2,18 @@ package com.niyati.designpattern.structural.proxy;
 
 import org.junit.jupiter.api.Test;
 
-import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class ProxyDesignPatternTest {
     @Test
     void testProxyPattern() {
-        List<String> proxyInternet = ProxyInternet.bannedSites;
-        assertFalse(proxyInternet.contains("website.com"));
 
-        assertTrue(proxyInternet.contains("abc.com"));
+        Internet internet = new ProxyInternet();
+        assertEquals("Access granted.", internet.connectTo("website.com"));
+
+        assertEquals("Access Denied", internet.connectTo("abc.com"));
+
+
     }
 
 }

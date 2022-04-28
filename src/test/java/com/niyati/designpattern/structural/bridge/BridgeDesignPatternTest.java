@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class BridgeDesignPatternTest {
     @Test
-    void tsetBridgePattern() {
+    void testBridgePattern() {
         Tv sonyNewRemote = new Sony(new NewRemote());
         assertEquals( "New Remote On. Sony Tv is On",sonyNewRemote.on());
         assertEquals("New Remote Off. Sony Tv is Off",sonyNewRemote.off() );

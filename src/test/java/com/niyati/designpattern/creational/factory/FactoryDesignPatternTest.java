@@ -7,12 +7,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class FactoryDesignPatternTest {
     @Test
     void testFactoryPattern() {
-        Mobile iphone = MobileFactory.getInstance("IPhone", 6, "A15");
-        assertEquals("A15", iphone.getProcessor());
-        assertEquals(6, iphone.getRam());
+        Notification smsNotification = NotificationFactory.createNotification("sms");
+        assertEquals("Sending SMS Notification",smsNotification.notifyUser());
 
-        Mobile onePlus = MobileFactory.getInstance("OnePlus", 8, "Octa Core");
-        assertEquals("Octa Core", onePlus.getProcessor());
-        assertEquals(8, onePlus.getRam());
+        Notification emailNotification = NotificationFactory.createNotification("email");
+        assertEquals("Sending email Notification",emailNotification.notifyUser());
     }
 }

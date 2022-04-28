@@ -7,7 +7,8 @@ public class RealInternet implements Internet {
     private static final Logger logger = LoggerFactory.getLogger(RealInternet.class);
 
     @Override
-    public void connectTo(String serverhost) {
+    public String connectTo(String serverhost) {
         logger.info("Connecting to {}", serverhost);
+        return ("Access granted.");
     }
 }

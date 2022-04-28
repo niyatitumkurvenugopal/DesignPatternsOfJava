@@ -16,4 +16,8 @@ public class CompositeAccount {
     public void addAccount(Account acc){
         accountList.add(acc);
     }
+
+    public void removeAccount(Account acc){
+        accountList.remove(acc);
+    }
 }
